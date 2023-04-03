@@ -34,9 +34,9 @@
     - [1.5.4. API Gateway](#154-api-gateway)
     - [1.5.5. Service Mesh - Malha de serviços](#155-service-mesh---malha-de-serviços)
     - [1.5.6. Trabalhar de forma assíncrona](#156-trabalhar-de-forma-assíncrona)
-    - [Retry - Garantia de Entrega](#retry---garantia-de-entrega)
-    - [Garantias de entrega com Kafka - (Broker)](#garantias-de-entrega-com-kafka---broker)
-    - [Situações complexas e decisões de alto nível](#situações-complexas-e-decisões-de-alto-nível)
+    - [1.5.7. Retry - Garantia de Entrega](#157-retry---garantia-de-entrega)
+    - [1.5.8. Garantias de entrega com Kafka - (Broker)](#158-garantias-de-entrega-com-kafka---broker)
+    - [1.5.9. Situações complexas e decisões de alto nível](#159-situações-complexas-e-decisões-de-alto-nível)
 
 <br>
 
@@ -584,7 +584,7 @@ A service mesh is a dedicated infrastructure layer for facilitating service-to-s
 
 ---
 
-### Retry - Garantia de Entrega
+### 1.5.7. Retry - Garantia de Entrega
 	
 Exponential backoff
 - Retry exponencial
@@ -598,7 +598,7 @@ Exponential backoff + Jitter -> Pequena alteração da chamada
 
 ---
 
-### Garantias de entrega com Kafka - (Broker)
+### 1.5.8. Garantias de entrega com Kafka - (Broker)
 	
 Broker -> sistema q armazena mensagem para outro pegar depois
 
@@ -613,7 +613,7 @@ Broker A, B e C - 'Ok, todos  recebidos'<br>
 
 ---
 
-### Situações complexas e decisões de alto nível
+### 1.5.9. Situações complexas e decisões de alto nível
 	
 - O que acontece se o 'Message broker' cair ?
 - O que acontece se o 'Rabbit MQ' cair ?
