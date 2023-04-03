@@ -13,18 +13,27 @@
   - [1.6. Pilares da arquitetura de software](#16-pilares-da-arquitetura-de-software)
   - [1.7. Requisitos arquiteturais - (RAs)](#17-requisitos-arquiteturais---ras)
 
+<br>
+
+---
 
 ## 1.1. Tipos de Arquitetura
+
+As organizações normalmente separam as funções de arquitetura em:
+- Arquitetura corporativa
+- Arquitetura de solução
+- Arquitetura tecnológica
+- Arquitetura de software
+
+<br>
+
+---
 
 ### 1.1.1. Arquitetura corporativa
 
 A arquitetura corporativa é a prática de aplicar um método compreensivo e rigoroso, para descrever uma estrutura para um processo organizacional, presente ou futuro; ou Sistemas de Informação. [^1]
 
 Ela tem a função de avaliar estrategicamente a organização como um todo. [^2]
-
-> :bulb: **OpenIA:** "Apresente resumidamente o que é arquitetura corporativa"
-> 
-> A arquitetura corporativa é um conjunto de práticas e padrões utilizados pelas empresas para gerenciar e alinhar seus processos de negócios, sistemas de informação e tecnologia. Ela visa garantir que todos os sistemas, dados e processos de negócios estejam alinhados com a estratégia geral da organização, sejam eficientes e eficazes, e que a empresa possa tomar decisões informadas sobre investimentos em tecnologia. A arquitetura corporativa geralmente inclui várias camadas, como a camada de negócios, camada de aplicativos, camada de dados e camada de tecnologia.[^3]
 
 Principais atribuições da arquitetura corporativa de sistemas de informação:
 - Avaliação de custos
@@ -33,6 +42,12 @@ Principais atribuições da arquitetura corporativa de sistemas de informação:
 - Planejamento de grandes implantações
 - Sistemas core
 - Migrações
+
+<br>
+
+> :bulb: **OpenIA:** "Apresente resumidamente o que é arquitetura corporativa"
+> 
+> A arquitetura corporativa é um conjunto de práticas e padrões utilizados pelas empresas para gerenciar e alinhar seus processos de negócios, sistemas de informação e tecnologia. Ela visa garantir que todos os sistemas, dados e processos de negócios estejam alinhados com a estratégia geral da organização, sejam eficientes e eficazes, e que a empresa possa tomar decisões informadas sobre investimentos em tecnologia. A arquitetura corporativa geralmente inclui várias camadas, como a camada de negócios, camada de aplicativos, camada de dados e camada de tecnologia.[^3]
 
 [^1]: A arquitetura arquitetura corporativa<br>
   Disponível em: https://pt.wikipedia.org/wiki/Arquitetura_empresarial<br>
@@ -46,12 +61,16 @@ Principais atribuições da arquitetura corporativa de sistemas de informação:
   Disponível em: https://chat.openai.com/chat<br>
   Consultado em: 01/04/2023
 
+<br>
+
 ---
 
 ### 1.1.2. Arquitetura de solução
 	
 Arquitetura de solução fica entre a área técnica e área de negócios e busca	transformar requisitos de negócio em soluções de software. Realiza desenhos arquiteturais da solução utilizando tecnologias como C4, UML, BPMN, etc.
 Também analisa os impactos comerciais de escolha tecnológica, faz reuniões com comercial em pré-venda, análise de custos, acompanhamento de implantação, ,igração, etc. [^2]
+
+<br>
 
 > :bulb: **OpenIA:** "Apresente resumidamente o que é arquitetura de solução"
 > 
@@ -60,6 +79,8 @@ Também analisa os impactos comerciais de escolha tecnológica, faz reuniões co
 [^4]: OpenIA -> "Apresente resumidamente o que é arquitetura de solução"<br>
   Disponível em: https://chat.openai.com/chat<br>
   Consultado em: 01/04/2023
+
+<br>
 
 ---
 
@@ -72,9 +93,13 @@ Exemplos de especialidades tecnológicas:
 		- Arquiteto Oracle	
 As certificações são uma forma de garantir a especialização de uma tecnologia por parte de um profissional [^2].
 
+<br>
+
 > :bulb: **OpenIA:** "Apresente resumidamente o que é arquitetura tecnológica"
 > 
 > A arquitetura tecnológica em Engenharia de Software é um conceito fundamental para o desenvolvimento de sistemas complexos. Ela se refere à estruturação dos componentes tecnológicos de um sistema, como hardware, software, redes e bancos de dados, para que possam trabalhar juntos de forma eficiente e eficaz. A arquitetura tecnológica também está relacionada à escolha das ferramentas e tecnologias adequadas para implementar um sistema. É importante que a arquitetura tecnológica seja planejada cuidadosamente para garantir que o sistema seja escalável, seguro e confiável. Um dos principais objetivos da arquitetura tecnológica é garantir que o sistema seja facilmente mantido e atualizado ao longo do tempo.
+
+<br>
 
 ---
 
@@ -110,6 +135,8 @@ A arquitetura de software é uma disciplina da engenharia de software, ligada ao
   Disponível em: https://www.youtube.com/watch?v=jUH5lKfpWE0&t=300s<br>
   Consultado em: 01/04/2023
 
+<br>
+
 ---
 
 ## 1.2. Papel do Arquiteto de Software
@@ -123,6 +150,10 @@ A arquitetura de software é uma disciplina da engenharia de software, ligada ao
 - Code Reviews
 - Identifica Pontos críticos
 
+<br>
+
+---
+
 ## 1.3. Por que Arquiteto de Software
 
 - Navegar do macro para micro
@@ -131,12 +162,16 @@ A arquitetura de software é uma disciplina da engenharia de software, ligada ao
 - Escolher tecnologias, não por ser 'hype'
 - Padrões de Projetos e Boas Práticas
 - Clareza do IMPACTO POSITIVO
- "que o software possui na organização como um todo".
-"Sentimento de Valor"
-"Pertencimento"
-"Resultado"
+  "que o software possui na organização como um todo".
+  "Sentimento de Valor".
+  "Pertencimento".
+  "Resultado".
 - Falta de Segurança pode 'congelar a carreira'
 - Aprender arquitetura proporciona CONFIANÇA
+
+<br>
+
+---
 
 ## 1.4. Arquitetura vs Design
 
@@ -151,31 +186,43 @@ A arquitetura de software é uma disciplina da engenharia de software, ligada ao
 	É "Visível de fora" ? Arquitetura
 	NÃO é "Visível de fora" ? Design
 
+<br>
+
+---
+
 ## 1.5. Sustentabilidade no dia zero
 
-	- Software é caro
-	- Software resolve uma "dor"
-	- Software precisa se pagar ao longo do tempo
-	- Acompanhar evolução
-	- Longevidade
-	
-	"'Breakeven' significa o momento de equilíbrio da sua empresa,
-	 ou seja, quando custos e despesas operacionais se igualam à receita."
+- Software é caro
+- Software resolve uma "dor"
+- Software precisa se pagar ao longo do tempo
+- Acompanhar evolução
+- Longevidade
+
+"'Breakeven' significa o momento de equilíbrio da sua empresa,
+ou seja, quando custos e despesas operacionais se igualam à receita."
+
+<br>
+
+---
 
 ## 1.6. Pilares da arquitetura de software
 
-	- Estrutura
-	- Componentização
-	- Relacionamento
-	- Governança - (padrões, regras, documentação, onboarding, etc)
+- Estrutura
+- Componentização
+- Relacionamento
+- Governança - (padrões, regras, documentação, onboarding, etc)
+
+<br>
+
+---
 
 ## 1.7. Requisitos arquiteturais - (RAs)
 
-	- Performance
-		- 500ms por requisição
-		- 50 Transações por segundo
-	- Armazenamento de Dados
-	- Escalabilidade
-	- Segurança
-	- Legal
-	- Auditoria
+- Performance
+- - 500ms por requisição
+- - 50 Transações por segundo
+- Armazenamento de Dados
+- Escalabilidade
+- Segurança
+- Legal
+- Auditoria
