@@ -1,5 +1,7 @@
 # 1. Domain-Driven Design
 
+---
+
 - [1. Domain-Driven Design](#1-domain-driven-design)
   - [1.1. Características do DDD](#11-características-do-ddd)
     - [1.1.1. Linguagem Ubíqua (geral e universal)](#111-linguagem-ubíqua-geral-e-universal)
@@ -14,10 +16,13 @@
   - [1.2. Template para descrever uma História](#12-template-para-descrever-uma-história)
   - [1.3. Template para descrever um cenário de teste](#13-template-para-descrever-um-cenário-de-teste)
 
+---
+
+**Visão Geral**
 
 Desenvolver software com foco no coração (domínio)
 	
-Tendo o objetivo de entender suas regras, processos e complexidades,separando-as assim de outros pontos complexos que normalmente são adicionados durante o processo de desenvolvimento.[^1]
+Tendo o objetivo de entender suas regras, processos e complexidades, separando-as assim de outros pontos complexos que normalmente são adicionados durante o processo de desenvolvimento.[^1]
 
 > The Domain-driven design are aimed aclerating software projects that have to deal with complicated domains.
 >
@@ -50,13 +55,25 @@ Tendo o objetivo de entender suas regras, processos e complexidades,separando-as
 - Padrões de Contexto
 - Core Domain
 
+<br>
+
+---
+
 ### 1.1.1. Linguagem Ubíqua (geral e universal)
 
 - Expressa o conhecimento dos especialistas de negócio
 
+<br>
+
+---
+
 ### 1.1.2. Model Driven Design – MDD
 
 - Modelo abstrato
+
+<br>
+
+---
 
 ### 1.1.3. Arquitetura em Camadas - Layered Architecture
 
@@ -67,13 +84,25 @@ Tendo o objetivo de entender suas regras, processos e complexidades,separando-as
 | Domínio              | Lógicas de negócio                     |
 | Infra-estrutura      | Persistência de dados, e-mail, Filas   |
 
+<br>
+
+---
+
 #### 1.1.3.1. Interface de Usuário
 - (Disparada) [Botões do Controle]
 - Comunicar com o usuário: receber comando como mostrar resultados;
 
+<br>
+
+---
+
 #### 1.1.3.2. Aplicação
 - (Quando) [Operações do controle]
 - Onde é disparada a lógica de negócio que está em outra camada, ou é chamada alguma tarefa técnica de banco de dados, como o início de uma transação e seu respectivo final
+
+<br>
+
+---
 
 #### 1.1.3.3. Domínio
 - (O que)
@@ -87,6 +116,10 @@ Tendo o objetivo de entender suas regras, processos e complexidades,separando-as
 > - Estar completamente desassociada uma da outra, se comunicando sempre através de interfaces;
 > - A camada inferior nunca dispara operações na camada superior;
 
+<br>
+
+---
+
 #### 1.1.3.4. Blocos de Construção (building blocks)
 
 | Bloco            | Descrição                                                             |
@@ -98,6 +131,10 @@ Tendo o objetivo de entender suas regras, processos e complexidades,separando-as
 | Serviços         | Lógica de negócio                                                     |
 | Repositórios     | Administra o ciclo de vida de Entidades, Objetos de Valor e Agregados |
 | Módulos          | Abstrações de um domínio (pacotes, namespaces)                        |
+
+<br>
+
+---
 
 #### 1.1.3.5. Padrões de Contexto (Bounded contexts)
 
@@ -111,6 +148,10 @@ Relação entre times - Bounded contexts (contextos delimitados)
 - Caminhos Separados
 - Serviço Aberto de Funcionalidades e Linguagem Publicada (API)
 
+<br>
+
+---
+
 #### 1.1.3.6. Núcleo do Domínio (Core Domain)
 
 - Doc.: Sentença da Visão de Domínio
@@ -121,16 +162,22 @@ Relação entre times - Bounded contexts (contextos delimitados)
 ---
 
 ## 1.2. Template para descrever uma História
-Funcionalidade : [Nome]
-- Para [ Valor ao Negócio ]
-- Eu, como [ Papel ]
-- Desejo poder realizar [ Funcionalidade ]
+
+	Funcionalidade : [Nome]
+	- Para [ Valor ao Negócio ]
+	- Eu, como [ Papel ]
+	- Desejo poder realizar [ Funcionalidade ]
+
+<br>
+
+---
 
 ## 1.3. Template para descrever um cenário de teste
-Cenário : [ Nome ]
-- Dado que [ Estado inicial do sistema ]
-- Quando [ Ação a ser realizada no sistema ]
-- Então [ Coisas que o sistema deve fazer após a ação do Quando ]
+
+	Cenário : [ Nome ]
+	- Dado que [ Estado inicial do sistema ]
+	- Quando [ Ação a ser realizada no sistema ]
+	- Então [ Coisas que o sistema deve fazer após a ação do Quando ]
 
 
 [^1]: Curso FullCycle - Arquitetura de Software<br>
