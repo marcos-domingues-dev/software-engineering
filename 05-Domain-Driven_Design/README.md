@@ -3,22 +3,23 @@
 ---
 
 - [1. Domain-Driven Design](#1-domain-driven-design)
-  - [1.1. Características do DDD](#11-características-do-ddd)
-    - [1.1.1. Linguagem Ubíqua (geral e universal)](#111-linguagem-ubíqua-geral-e-universal)
-    - [1.1.2. Model Driven Design – MDD](#112-model-driven-design--mdd)
-    - [1.1.3. Arquitetura em Camadas - Layered Architecture](#113-arquitetura-em-camadas---layered-architecture)
-      - [1.1.3.1. Interface de Usuário](#1131-interface-de-usuário)
-      - [1.1.3.2. Aplicação](#1132-aplicação)
-      - [1.1.3.3. Domínio](#1133-domínio)
-      - [1.1.3.4. Blocos de Construção (building blocks)](#1134-blocos-de-construção-building-blocks)
-      - [1.1.3.5. Padrões de Contexto (Bounded contexts)](#1135-padrões-de-contexto-bounded-contexts)
-      - [1.1.3.6. Núcleo do Domínio (Core Domain)](#1136-núcleo-do-domínio-core-domain)
-  - [1.2. Template para descrever uma História](#12-template-para-descrever-uma-história)
-  - [1.3. Template para descrever um cenário de teste](#13-template-para-descrever-um-cenário-de-teste)
+  - [1.1. Visão Geral](#11-visão-geral)
+  - [1.2. Características do DDD](#12-características-do-ddd)
+    - [1.2.1. Linguagem Ubíqua (geral e universal)](#121-linguagem-ubíqua-geral-e-universal)
+    - [1.2.2. Model Driven Design – MDD](#122-model-driven-design--mdd)
+    - [1.2.3. Arquitetura em Camadas - Layered Architecture](#123-arquitetura-em-camadas---layered-architecture)
+      - [1.2.3.1. Interface de Usuário](#1231-interface-de-usuário)
+      - [1.2.3.2. Aplicação](#1232-aplicação)
+      - [1.2.3.3. Domínio](#1233-domínio)
+      - [1.2.3.4. Blocos de Construção (building blocks)](#1234-blocos-de-construção-building-blocks)
+      - [1.2.3.5. Padrões de Contexto (Bounded contexts)](#1235-padrões-de-contexto-bounded-contexts)
+      - [1.2.3.6. Núcleo do Domínio (Core Domain)](#1236-núcleo-do-domínio-core-domain)
+  - [1.3. Template para descrever uma História](#13-template-para-descrever-uma-história)
+  - [1.4. Template para descrever um cenário de teste](#14-template-para-descrever-um-cenário-de-teste)
 
 ---
 
-**Visão Geral**
+## 1.1. Visão Geral
 
 Desenvolver software com foco no coração (domínio)
 	
@@ -46,7 +47,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-## 1.1. Características do DDD
+## 1.2. Características do DDD
 
 - Linguagem Ubíqua (geral e universal)
 - Modelo Abstrato
@@ -59,7 +60,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-### 1.1.1. Linguagem Ubíqua (geral e universal)
+### 1.2.1. Linguagem Ubíqua (geral e universal)
 
 - Expressa o conhecimento dos especialistas de negócio
 
@@ -67,7 +68,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-### 1.1.2. Model Driven Design – MDD
+### 1.2.2. Model Driven Design – MDD
 
 - Modelo abstrato
 
@@ -75,7 +76,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-### 1.1.3. Arquitetura em Camadas - Layered Architecture
+### 1.2.3. Arquitetura em Camadas - Layered Architecture
 
 | Camada               | Descrição                              |
 | :------------------- | :------------------------------------- |
@@ -88,7 +89,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-#### 1.1.3.1. Interface de Usuário
+#### 1.2.3.1. Interface de Usuário
 - (Disparada) [Botões do Controle]
 - Comunicar com o usuário: receber comando como mostrar resultados;
 
@@ -96,7 +97,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-#### 1.1.3.2. Aplicação
+#### 1.2.3.2. Aplicação
 - (Quando) [Operações do controle]
 - Onde é disparada a lógica de negócio que está em outra camada, ou é chamada alguma tarefa técnica de banco de dados, como o início de uma transação e seu respectivo final
 
@@ -104,7 +105,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-#### 1.1.3.3. Domínio
+#### 1.2.3.3. Domínio
 - (O que)
 - É esta camada que dá valor à aplicação, ela iterage com todas as camadas da aplicação.
 1. Recebe chamadas da camada de aplicação;
@@ -120,7 +121,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-#### 1.1.3.4. Blocos de Construção (building blocks)
+#### 1.2.3.4. Blocos de Construção (building blocks)
 
 | Bloco            | Descrição                                                             |
 | :--------------- | :-------------------------------------------------------------------- |
@@ -136,7 +137,7 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 ---
 
-#### 1.1.3.5. Padrões de Contexto (Bounded contexts)
+#### 1.2.3.5. Padrões de Contexto (Bounded contexts)
 
 Relação entre times - Bounded contexts (contextos delimitados)
 
@@ -152,7 +153,7 @@ Relação entre times - Bounded contexts (contextos delimitados)
 
 ---
 
-#### 1.1.3.6. Núcleo do Domínio (Core Domain)
+#### 1.2.3.6. Núcleo do Domínio (Core Domain)
 
 - Doc.: Sentença da Visão de Domínio
 - Sub-domínios genéricos (Soluções de prateleira)
@@ -161,7 +162,7 @@ Relação entre times - Bounded contexts (contextos delimitados)
 
 ---
 
-## 1.2. Template para descrever uma História
+## 1.3. Template para descrever uma História
 
 	Funcionalidade : [Nome]
 	- Para [ Valor ao Negócio ]
@@ -172,7 +173,7 @@ Relação entre times - Bounded contexts (contextos delimitados)
 
 ---
 
-## 1.3. Template para descrever um cenário de teste
+## 1.4. Template para descrever um cenário de teste
 
 	Cenário : [ Nome ]
 	- Dado que [ Estado inicial do sistema ]
