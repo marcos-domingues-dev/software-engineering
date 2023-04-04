@@ -181,7 +181,7 @@ Relação entre times - Bounded contexts (contextos delimitados)
 	- Então [ Coisas que o sistema deve fazer após a ação do Quando ]
 
 
-[^1]: Curso FullCycle - Arquitetura de Software<br>
+[^1]: Curso FullCycle - DDD - DOMAIN-DRIVEN DESIGN<br>
   Consultado em: 06/01/2023<br>
   Disponível em: https://plataforma.fullcycle.com.br
 
