@@ -20,37 +20,37 @@
 ---
 
 - [1. Comunicação entre serviços](#1-comunicação-entre-serviços)
-  - [1.1. REST](#11-rest)
-    - [1.1.1. Níveis de maturidade](#111-níveis-de-maturidade)
-      - [1.1.1.1. Richardson Maturity Model](#1111-richardson-maturity-model)
-      - [1.1.1.2. "Verbos HTTP com representatividade"](#1112-verbos-http-com-representatividade)
-      - [1.1.1.3. Utilização de "resources"](#1113-utilização-de-resources)
-    - [1.1.2. Method e Content Negotiation](#112-method-e-content-negotiation)
-      - [1.1.2.1. Uma boa API REST](#1121-uma-boa-api-rest)
-      - [1.1.2.2. HAL, Collection+JSON e Siren](#1122-hal-collectionjson-e-siren)
-      - [1.1.2.3. REST: HAL](#1123-rest-hal)
-      - [1.1.2.4. REST: Http Method Negotiation](#1124-rest-http-method-negotiation)
-      - [1.1.2.5. REST: Content Negotiation - Accept Negotiation](#1125-rest-content-negotiation---accept-negotiation)
-      - [1.1.2.6. REST: Content Negotiation - Content Type Negotiation](#1126-rest-content-negotiation---content-type-negotiation)
-  - [1.2. gRPC](#12-grpc)
-    - [1.2.1. Características - Em quais casos podemos utilizar ?](#121-características---em-quais-casos-podemos-utilizar-)
-    - [1.2.2. LINKS](#122-links)
-    - [1.2.3. Linguagens](#123-linguagens)
-    - [1.2.4. Protocol Buffers](#124-protocol-buffers)
-    - [1.2.5. REST vs gRPC](#125-rest-vs-grpc)
-  - [1.3. GraphQL](#13-graphql)
-    - [1.3.1. Vantagens](#131-vantagens)
-  - [1.4. Comunicaçao Síncrona](#14-comunicaçao-síncrona)
-  - [1.5. Comunicaçao Assíncrona](#15-comunicaçao-assíncrona)
-  - [1.6. Service Discovery](#16-service-discovery)
-    - [1.6.1. Consul](#161-consul)
-      - [1.6.1.1. Consul - Service registry](#1611-consul---service-registry)
-      - [1.6.1.2. Consul - Health check Ativo](#1612-consul---health-check-ativo)
-      - [1.6.1.3. Consul - Multicloud - ( multiregião )](#1613-consul---multicloud----multiregião-)
-      - [1.6.1.4. Agent: Client \& Server](#1614-agent-client--server)
-      - [1.6.1.5. Consul client](#1615-consul-client)
-      - [1.6.1.6. Consul Server](#1616-consul-server)
-      - [1.6.1.7. Consul - Dev Mode](#1617-consul---dev-mode)
+	- [1.1. REST](#11-rest)
+		- [1.1.1. Níveis de maturidade](#111-níveis-de-maturidade)
+			- [1.1.1.1. Richardson Maturity Model](#1111-richardson-maturity-model)
+			- [1.1.1.2. "Verbos HTTP com representatividade"](#1112-verbos-http-com-representatividade)
+			- [1.1.1.3. Utilização de "resources"](#1113-utilização-de-resources)
+		- [1.1.2. Method e Content Negotiation](#112-method-e-content-negotiation)
+			- [1.1.2.1. Uma boa API REST](#1121-uma-boa-api-rest)
+			- [1.1.2.2. HAL, Collection+JSON e Siren](#1122-hal-collectionjson-e-siren)
+			- [1.1.2.3. REST: HAL](#1123-rest-hal)
+			- [1.1.2.4. REST: Http Method Negotiation](#1124-rest-http-method-negotiation)
+			- [1.1.2.5. REST: Content Negotiation - Accept Negotiation](#1125-rest-content-negotiation---accept-negotiation)
+			- [1.1.2.6. REST: Content Negotiation - Content Type Negotiation](#1126-rest-content-negotiation---content-type-negotiation)
+	- [1.2. gRPC](#12-grpc)
+		- [1.2.1. Características - Em quais casos podemos utilizar ?](#121-características---em-quais-casos-podemos-utilizar-)
+		- [1.2.2. LINKS](#122-links)
+		- [1.2.3. Linguagens](#123-linguagens)
+		- [1.2.4. Protocol Buffers](#124-protocol-buffers)
+		- [1.2.5. REST vs gRPC](#125-rest-vs-grpc)
+	- [1.3. GraphQL](#13-graphql)
+		- [1.3.1. Vantagens](#131-vantagens)
+	- [1.4. Comunicaçao Síncrona](#14-comunicaçao-síncrona)
+	- [1.5. Comunicaçao Assíncrona](#15-comunicaçao-assíncrona)
+	- [1.6. Service Discovery](#16-service-discovery)
+		- [1.6.1. Consul](#161-consul)
+			- [1.6.1.1. Consul - Service registry](#1611-consul---service-registry)
+			- [1.6.1.2. Consul - Health check Ativo](#1612-consul---health-check-ativo)
+			- [1.6.1.3. Consul - Multicloud - ( multiregião )](#1613-consul---multicloud----multiregião-)
+			- [1.6.1.4. Agent: Client \& Server](#1614-agent-client--server)
+			- [1.6.1.5. Consul client](#1615-consul-client)
+			- [1.6.1.6. Consul Server](#1616-consul-server)
+			- [1.6.1.7. Consul - Dev Mode](#1617-consul---dev-mode)
 
 ---
 
@@ -190,7 +190,7 @@ Um cliente chama uma função em um servidor<br>
 >
 > O gRPC utiliza o HTTP/2 como protocolo de transporte, o que permite a comunicação assíncrona e multiplexada, além de suportar a compressão de dados. Ele também oferece suporte a diferentes linguagens de programação, o que permite que os desenvolvedores usem suas linguagens de programação favoritas para escrever e consumir serviços gRPC.
 > 
-> Em resumo, o gRPC é um framework de comunicação de software livre que utiliza RPC e o protocolo HTTP/2 para criar APIs rápidas, eficientes e escaláveis. Ele é amplamente utilizado na Engenharia de Software para projetar serviços distribuídos que precisam de uma comunicação de baixa latência e alto desempenho.
+> Em resumo, o gRPC é um framework de comunicação de software livre que utiliza RPC e o protocolo HTTP/2 para criar APIs rápidas, eficientes e escaláveis. Ele é amplamente utilizado na Engenharia de Software para projetar serviços distribuídos que precisam de uma comunicação de baixa latência e alto desempenho.[^5]
 
 ### 1.2.1. Características - Em quais casos podemos utilizar ?
 
@@ -262,7 +262,7 @@ GraphQL é uma linguagem de consulta de APIs<br>
 > 
 > O GraphQL é independente de linguagem e plataforma, o que significa que pode ser usado com qualquer linguagem de programação e em qualquer plataforma. Ele também oferece suporte a ferramentas de desenvolvimento, como o GraphiQL, que permite que os desenvolvedores testem suas consultas GraphQL e visualizem os resultados em tempo real.
 > 
-> Em resumo, o GraphQL é uma linguagem de consulta para APIs que permite que o cliente especifique exatamente quais dados ele precisa e como deseja que esses dados sejam retornados pelo servidor. Ele é amplamente utilizado na Engenharia de Software para projetar APIs flexíveis, escaláveis e seguras.
+> Em resumo, o GraphQL é uma linguagem de consulta para APIs que permite que o cliente especifique exatamente quais dados ele precisa e como deseja que esses dados sejam retornados pelo servidor. Ele é amplamente utilizado na Engenharia de Software para projetar APIs flexíveis, escaláveis e seguras.[^6]
 
 ### 1.3.1. Vantagens
 
@@ -365,7 +365,7 @@ https://www.hashicorp.com/products/consul
   Consultado em: 06/01/2023<br>
   Disponível em: https://plataforma.fullcycle.com.br
 
-[^2]: OpenIA -> "Apresente resumidamente o que é arquitetura corporativa"<br>
+[^2]: OpenIA -> "Apresente resumidamente o que é REST"<br>
   Disponível em: https://chat.openai.com/chat<br>
   Consultado em: 01/04/2023
 
@@ -376,3 +376,11 @@ https://www.hashicorp.com/products/consul
 [^4]: Protocol Buffers<br>
   Disponível em: https://pt.wikipedia.org/wiki/Protocol_Buffers<br>
   Consultado em: 03/04/2023
+
+[^5]: OpenIA -> "Apresente resumidamente o que é gRPC"<br>
+  Disponível em: https://chat.openai.com/chat<br>
+  Consultado em: 01/04/2023
+
+[^6]: OpenIA -> "Apresente resumidamente o que é GraphQL"<br>
+  Disponível em: https://chat.openai.com/chat<br>
+  Consultado em: 01/04/2023
