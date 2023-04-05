@@ -66,6 +66,12 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 
 <br>
 
+> :bulb: **OpenIA:** "Explique resumidamente o que é 'Linguagem Ubíqua', em Domain-driven design"
+> 
+> Em Domain-Driven Design (DDD), a Linguagem Ubíqua (Ubiquitous Language) é um conceito fundamental que se refere a uma linguagem compartilhada por todos os membros de uma equipe de desenvolvimento de software, incluindo especialistas em negócios e desenvolvedores. A Linguagem Ubíqua é uma linguagem comum que descreve o domínio do problema de forma clara e consistente, e que pode ser utilizada em todas as partes da aplicação. O objetivo é garantir que todas as pessoas envolvidas no projeto tenham um entendimento compartilhado do problema que está sendo resolvido e possam se comunicar de forma efetiva. A Linguagem Ubíqua é criada a partir de uma colaboração contínua entre especialistas em negócios e desenvolvedores, e deve ser revisada e atualizada regularmente durante o desenvolvimento do projeto.[^4]
+
+<br>
+
 ---
 
 ### 1.2.2. Model Driven Design – MDD
@@ -84,6 +90,18 @@ Tendo o objetivo de entender suas regras, processos e complexidades, separando-a
 | Aplicação            | Conectar a View às camadas inferiores; |
 | Domínio              | Lógicas de negócio                     |
 | Infra-estrutura      | Persistência de dados, e-mail, Filas   |
+
+<br>
+
+> :bulb: **OpenIA:** "Explique resumidamente o que é 'Layered Architecture', em Domain-driven design"
+> 
+> A arquitetura em camadas (Layered Architecture) é um padrão comum de arquitetura de software em Domain-Driven Design (DDD). Essa arquitetura é composta por várias camadas, cada uma com uma responsabilidade específica e um conjunto de interfaces bem definido.
+> - A camada mais externa é geralmente a camada de apresentação, que interage diretamente com os usuários.
+> - Abaixo dela, há a camada de aplicação, que contém a lógica de negócios e coordena as diferentes partes da aplicação.
+> - A camada de domínio é a camada central da arquitetura, onde se encontra o modelo de domínio, com as Entidades, Value Objects, Aggregates e Domain Services.
+> - A camada de infraestrutura é a camada mais baixa, responsável por fornecer acesso aos recursos de sistema, como banco de dados, rede, etc.
+> 
+> Cada camada é projetada para ser independente das outras camadas, facilitando a manutenção e evolução do sistema. A arquitetura em camadas é uma das arquiteturas mais populares em DDD e pode ser encontrada em muitos sistemas de software modernos.[^5]
 
 <br>
 
@@ -192,3 +210,11 @@ Relação entre times - Bounded contexts (contextos delimitados)
 [^3]: OpenIA -> "Apresente resumidamente o que é Domain-driven design"<br>
   Disponível em: https://chat.openai.com/chat<br>
   Consultado em: 03/04/2023
+
+[^4]: OpenIA -> "Explique resumidamente o que é 'Linguagem Ubíqua', em Domain-driven design"<br>
+  Disponível em: https://chat.openai.com/chat<br>
+  Consultado em: 04/04/2023
+
+[^5]: OpenIA -> "Explique resumidamente o que é 'Layered Architecture', em Domain-driven design"<br>
+  Disponível em: https://chat.openai.com/chat<br>
+  Consultado em: 04/04/2023
