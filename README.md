@@ -11,7 +11,7 @@ Este é um repositório para armazenar conceitos de algumas das principais tecno
   Disponível em: https://www.linkedin.com/in/marcos-domingues-dev/
 
 
-Estes conhecimentos são focados no desenvolvimento de aplicações corporativas. Portanto, eles são principalmente conceitos de arquitetura de software, microserviços, monitoramento e observabilidade, DevOps e Cloud.
+Estes conhecimentos são focados no desenvolvimento de aplicações corporativas. Portanto, eles são principalmente conceitos de Arquitetura de Software, Microserviços, Monitoramento e Observabilidade, Infraestrutura DevOps e Cloud.
 
 Tópicos:
 - 01 - Docker
@@ -24,3 +24,4 @@ Tópicos:
 - 08 - Arquiterua Hexagonal
 - 09 - Clean Architecture
 - 10 - Sistemas Monolíticos
+- 11 - Arquitetura baseada em microsserviços
